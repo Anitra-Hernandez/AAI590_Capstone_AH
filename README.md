@@ -1,4 +1,4 @@
-# Architecture Review Board (ARB) Model Evaluation and Decision Support System
+# Prediction of Architecture Review Board (ARB) Outcomes Using Artificial Intelligence: An Explainable AI-Based Decision Support System for Enterprise Architecture Governance
 
 This project is a part of the AAI-590 Capstone Project course in the Applied Artificial Intelligence Program at the University of San Diego.
 
