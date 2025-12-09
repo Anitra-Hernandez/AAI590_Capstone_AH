@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 
-# Load preprocessed data
-preprocessed_file = r'C:\Users\anitr\AAI590_Capstone\AAI590_Capstone_AH\Data\ea_modelset\eamodelset\dataset\preprocessed_models.csv'
-model_path = r'C:\Users\anitr\AAI590_Capstone\AAI590_Capstone_AH\Models\tuned_and_hybrid_models\rf_tuned.pkl'
-metrics = r'C:\Users\anitr\AAI590_Capstone\AAI590_Capstone_AH\Models\tuned_and_hybrid_models\model_metrics.csv'
+# Load preprocessed data 
+preprocessed_file = "Data/ea_modelset/eamodelset/dataset/preprocessed_models.csv"
+model_path = "Models/tuned_and_hybrid_models/rf_tuned.pkl"
+metrics = "Models/tuned_and_hybrid_models/model_metrics.csv"
 
 # Use template columns as features, drop known non-feature columns
 df_template = pd.read_csv(preprocessed_file)
