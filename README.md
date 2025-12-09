@@ -221,15 +221,6 @@ The application is deployed and accessible online at:
 
 **[ARB Evaluator App (Live)](https://aai590capstoneahgit-arbappevaluatorapp.streamlit.app/)**
 
-#### Option 2: Run Locally
-
-```bash
-cd Notebooks
-streamlit run arb_evaluator_app.py
-```
-
-The app will open in your browser at `http://localhost:8501`
-
 ---
 
 ## Model Performance
@@ -256,7 +247,6 @@ All models were evaluated on a held-out test set (20% of data) using accuracy an
 - Fast inference time
 - Built-in feature importance
 - Robust performance across all classes
-- No risk of overfitting (validated through cross-validation)
 
 ### Confusion Matrix Analysis
 
@@ -283,19 +273,19 @@ This project employs multiple explainability techniques to ensure model transpar
 ### SHAP Analysis (XGBoost)
 - **SHAP TreeExplainer** computes feature importance for multi-class classification
 - **Beeswarm plots** visualize how features impact predictions across all three outcome classes
-- **Key Finding**: View count, element count, and rel_elem_ratio are the strongest predictors
+- **Key Finding**: viewCount, duplpicateCount, and hasWarning are the strongest predictors
 
 ### Random Forest Feature Importance
 - **Top 5 Features**:
   1. **view_count**: Most critical predictor
-  2. **element_count**: Second most impactful
-  3. **rel_elem_ratio**: Engineered quality metric
-  4. **relationship_count**: Structural complexity
-  5. **warnings**: Data quality flag
+  2. **hasDuplicate**: Second most impactful
+  3. **duplicateCount**: Data quality indicator
+  4. **hasWarning**: Data quality flag
+  5. **elementCount**: Structural quality indicator
 - Displayed in real-time in the Streamlit app
 
 ### MLP Neural Network Analysis
-- **Architecture**: 3-layer network (50, 30, 20 neurons) with ReLU activation
+- **Architecture**: 2-layer network (128, 112 neurons) with tanh activation
 - **Strengths**: Captures non-linear feature interactions and complex patterns
 - **Feature Sensitivity**: Neural networks implicitly weight features through learned connections
 - **Performance**: 99.5% accuracy with consistent predictions across validation sets
@@ -331,7 +321,7 @@ This project employs multiple explainability techniques to ensure model transpar
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - **Data Processing**: Pandas, NumPy
 - **Machine Learning**: Scikit-learn, XGBoost, Optuna
@@ -359,12 +349,9 @@ The Streamlit app provides:
 ## Future Enhancements
 
 ### Short-Term Improvements
-- [ ] Deploy app to cloud platform (Streamlit Cloud, Heroku)
-- [ ] Add more model interpretability features
-- [ ] Implement real-time model retraining
-- [ ] Expand dataset with additional architecture model sources
-- [ ] Add batch prediction capabilities
-- [ ] Create REST API for predictions
+- Add more model interpretability features
+- Implement real-time model retraining
+- Expand dataset with additional architecture model sources
 
 ### Long-Term Enhancement Options
 
@@ -387,7 +374,7 @@ The Streamlit app provides:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -396,15 +383,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 **Anitra Hernandez**
-- GitHub: [@Anitra-Hernandez](https://github.com/Anitra-Hernandez)
+- GitHub: [@Anitra-Hernandez](https://github.com/Anitra-Hernandez/AAI590_Capstone)
 - Project: AAI590 Capstone - University of San Diego
 
 ---
 
 ## Acknowledgments
 
-- **USD AAI Program**: Academic support and guidance
+- **USD Applied AI Program**: Academic support and guidance
+- **Professor Anna Marbut**: Academic support and guidance
 - **EA Model Set Dataset**: Source dataset for enterprise architecture models
+- **Streamlit**: Interactive web application
 - **Open Source Community**: Libraries and tools that made this project possible
 
 ---
