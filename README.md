@@ -407,3 +407,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **EA Model Set Dataset**: Source dataset for enterprise architecture models
 - **Open Source Community**: Libraries and tools that made this project possible
 
+---
+
+## References
+
+Brunner, C., Linsbauer, L., Neumayer, V., & Wimmer, M. (2023). EA ModelSet: A FAIR dataset of enterprise architecture models. *arXiv*. https://arxiv.org/abs/2309.04169
+
+OpenAI. (2025). ChatGPT (GPT-5.1) [Large language model]. Used for error resolution and debugging assistance. https://openai.com/chatgpt
+
+Python Software Foundation. (2024). Python (Version 3.11) [Programming language]. https://www.python.org
+
+Snow, P. (2019). *Streamlit: Turning data scripts into shareable web apps*. Streamlit Inc. https://streamlit.io
+
