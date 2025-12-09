@@ -215,6 +215,14 @@ Run notebooks in sequence:
 
 ### Running the Streamlit App
 
+#### Option 1: Access the Deployed App
+
+The application is deployed and accessible online at:
+
+**[ARB Evaluator App (Live)](https://aai590capstoneahgit-arbappevaluatorapp.streamlit.app/)**
+
+#### Option 2: Run Locally
+
 ```bash
 cd Notebooks
 streamlit run arb_evaluator_app.py
