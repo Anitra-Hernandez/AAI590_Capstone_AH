@@ -75,15 +75,12 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
 - Distribution analysis of features and target variable
 - Visualization of relationships between features
 - Identification of patterns and outliers
-- Data quality assessment
 
 ### 2. Data Preprocessing (`02_preprocessing.ipynb`)
-- Handling missing values and outliers
+- Analysis of missing values and outliers
 - Feature engineering (ratio calculations, num_formats)
 - One-hot encoding for categorical variables (source, language)
-- Data normalization and standardization
-- Train-test split with stratification
-- Saving preprocessed data for modeling
+- Engineering of arb_outcome as target feature
 
 ### 3. Baseline Models (`03_baseline_model.ipynb`)
 - Implementation of three baseline models:
@@ -92,7 +89,6 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
   - XGBoost Classifier
 - Initial model evaluation and comparison
 - Establishing performance benchmarks
-- Saving baseline models
 
 ### 4. Hyperparameter Tuning & Hybrid Models (`04_tuning_and_hybrid.ipynb`)
 - Optuna-based hyperparameter optimization for:
@@ -102,7 +98,6 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
   - Soft Voting Classifier
   - Stacking Classifier
 - Performance comparison with baseline models
-- Saving optimized models
 
 ### 5. Neural Network (`05_neural_network.ipynb`)
 - Multi-Layer Perceptron (MLP) implementation
@@ -110,7 +105,6 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
 - Hyperparameter tuning with Optuna
 - Training with early stopping
 - Performance evaluation and comparison
-- Saving tuned MLP model
 
 ### 6. Model Comparison & Explainability (`06_model_comparion_and_explainability.ipynb`)
 - Comprehensive evaluation of all models
@@ -121,13 +115,11 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
 - Final model selection
 
 ### 7. Results & Visualizations (`07_results_and_images.ipynb`)
-- Generation of publication-quality visualizations
 - Model performance comparisons (accuracy, F1-score)
 - Confusion matrices for top models
 - Feature importance charts
 - Outcome distribution analysis
 - SHAP beeswarm plots for each class
-- Saving metrics for Streamlit app
 
 ### 8. ARB Evaluator Application (`08_arb_evaluator_app.ipynb`)
 - Streamlit web application development
@@ -135,7 +127,6 @@ This project follows a structured workflow across eight Jupyter notebooks, each 
 - Real-time prediction functionality
 - Feature importance visualization
 - Model comparison dashboard
-- Integration of all trained models
 
 ---
 
